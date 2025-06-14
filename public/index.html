@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Colour Sync</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+        socket.on("updateColour", (colour) => {
+            const { red, green, blue, alpha } = colour;
+            const overlay = document.getElementById("overlay");
+            overlay.style.backgroundColor = `rgba(${red}, ${green}, ${blue}, ${alpha})`;
+        });
+    </script>
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            background-color: black; /* required to support alpha */
+        }
+        #overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 1);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="overlay"></div>
+</body>
+</html>

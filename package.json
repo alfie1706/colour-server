@@ -1,0 +1,14 @@
+{
+  "name": "colour-server",
+  "version": "1.0.0",
+  "author": "Alfie Turner",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "socket.io": "^4.7.2"
+  }
+}
