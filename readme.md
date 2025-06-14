@@ -7,7 +7,7 @@ This is a simple node.js app for displaying a solid colour on a webpage, and all
 * Port 26567 not already in use.
 
 ## Installation
-Place the "colour-server" folder in a suitable directory and execute. `npm i` to install relevant dependencies, and `npm start` to run the application.
+Place the "colour-server" folder in a suitable directory and execute. `npm ci` to install relevant dependencies, and `npm start` to run the application.
 
 This app will not run at startup by default, this should be done with Task Scheduler or similar.
 
