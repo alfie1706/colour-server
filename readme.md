@@ -1,4 +1,4 @@
-# Colour-Server Documentation
+# Colour-Server
 
 This is a simple node.js app for displaying a solid colour on a webpage, and allowing updates via a REST API.
 
