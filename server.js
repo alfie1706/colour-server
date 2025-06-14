@@ -47,7 +47,7 @@ io.on("connection", (socket) => {
     socket.emit("updateColour", currentColour);
 });
 
-const PORT = process.env.PORT || 26567;
+const PORT = process.env.PORT || 13737;
 server.listen(PORT, '0.0.0.0', () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
