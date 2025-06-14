@@ -2,20 +2,25 @@
 
 This is a simple node.js app for displaying a solid colour on a webpage, and allowing updates via a REST API.
 
+***This app will not run at startup by default, this should be done with Task Scheduler or similar.***
+
 ## Pre-Requisites
-* Node.js v8 or above.
+* [Node.js](https://nodejs.org/en)
 * Port 26567 not already in use.
 
 ## Installation
-Place the "colour-server" folder in a suitable directory and execute. `npm ci` to install relevant dependencies, and `npm start` to run the application.
+* Download and unzip "colour-server" to a desired directory. 
+* Open CLI to the directory and execute `npm ci` to install relevant dependencies.
+* Run `npm start` to start the application.
 
-This app will not run at startup by default, this should be done with Task Scheduler or similar.
+To verify app running, navigate to your local IP on port 26567, and you should see a white background.
+
 
 ## Endpoints
-### `GET/POST` /color
+### `[GET/POST]` /color
 This endpoint will either set or return the currently selected colour.
 
-### Json Schema
+### Json Example
 
 ```json
 {
