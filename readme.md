@@ -17,7 +17,7 @@ To verify that the app is running, navigate to your local IP on port 13737, and 
 
 
 ## Endpoints
-### `[GET/POST]` /color
+### `[GET/POST]` /colour
 This endpoint will either set or return the currently selected colour.
 
 ### Json Example
@@ -25,8 +25,8 @@ This endpoint will either set or return the currently selected colour.
 ```json
 {
     "red": 255,
-    "green" 255,
-    "blue" 255,
-    "alpha" 255
+    "green": 255,
+    "blue": 255,
+    "alpha": 255
 }
 ```
